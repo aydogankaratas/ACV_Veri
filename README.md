@@ -1,2 +1,2 @@
 # ACV_Veri
-İleri Veri Analitiğ i - Case Studies
+İleri Veri Analitiği - Case Studies
