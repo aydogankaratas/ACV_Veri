@@ -1,6 +1,5 @@
-# 📊 Enerji Perakende Veri Analizi Case Study
+#  Enerji Perakende Veri Analizi Case Study - Ahmet Çalık Vakfı
 
-## 🎯 Proje Hakkında
 
 Bu proje, **Ahmet Çalık Vakfı İleri Veri Analitiği Eğitimi** kapsamında hazırlanmış olan gerçek enerji sektörü verilerine dayalı kapsamlı bir veri analizi çalışmasıdır. Amasya ili ve ilçelerindeki (Hamamözü, Gümüşhacıköy, Göynücek) elektrik tüketim ve tahsilat verileri kullanılarak müşteri davranışları, mevsimsel trendler ve ödeme alışkanlıkları analiz edilmiştir.
 
@@ -11,31 +10,31 @@ Bu proje, **Ahmet Çalık Vakfı İleri Veri Analitiği Eğitimi** kapsamında h
 
 ---
 
-## 📁 Proje Yapısı
-
+###  Proje Yapısı
 ```
 case_study_02/
-├── README.md                              # Proje dokümantasyonu    
-├── notebooks/
-│   ├── notebook_01_veri_kesfi.ipynb      # Veri keşfi ve tanımlayıcı istatistik
-│   ├── notebook_02_gorsellestirme.ipynb  # Görselleştirme ve karşılaştırmalı analiz
-│   └── notebook_03_veri_hikayesi.ipynb   # Müşteri segmentasyonu ve veri hikayesi
----
+├── README.md
+├── notebook_01_Veri_Keşfi_ve_Tanımlayıcı_İstatistik.ipynb      # Veri keşfi ve tanımlayıcı istatistik
+├── notebook_02_Veri_Görselleştirme.ipynb                       # Görselleştirme ve karşılaştırmalı analiz
+└── notebook_03_Veri_Hikayesi_Anlatımı.ipynb                    # Müşteri segmentasyonu ve veri hikayesi
 ```
+---
 
-## 📊 Veri Seti Genel Bakış
+###  Veri Seti Genel Bakış
 
-### Veri Kaynakları
+#### Veri Kaynakları
+
 
 | Sayfa | Açıklama | Kayıt Sayısı | Ana Sütunlar |
-|-------|----------|--------------|-------------|
-| **Tahsilat** | Ödeme işlemleri | 636,993 | Şube, İlçe, Tahsilat Tarihi, Ödeme Tutarları |
-| **Tahsilat 1** | Fatura bazlı ödeme zamanlaması | 917,632 | Mali Yıl/Dönem, Hesap Sınıfı, Zamanında/Geç Ödeme |
-| **Tahakkuk** (Hamamözü) | Elektrik tüketimi | 124,818 | Tarih, kWh, Hesap Sınıfı |
-| **Tahakkuk 1** (Gümüşhacıköy) | Elektrik tüketimi | 765,657 | Tarih, kWh, Hesap Sınıfı |
-| **Tahakkuk 2** (Göynücek) | Elektrik tüketimi | 295,223 | Tarih, kWh, Hesap Sınıfı |
+|------|----------|--------------|-------------|
+| Tahsilat | Ödeme işlemleri | 636,993 | Şube, İlçe, Tarih, Tutar |
+| Tahsilat 1 | Ödeme zamanlaması | 917,632 | Dönem, Hesap Sınıfı |
+| Tahakkuk (Hamamözü) | Elektrik tüketimi | 124,818 | Tarih, kWh, Hesap Sınıfı |
+| Tahakkuk 1 (Gümüşhacıköy) | Elektrik tüketimi | 765,657 | Tarih, kWh, Hesap Sınıfı |
+| Tahakkuk 2 (Göynücek) | Elektrik tüketimi | 295,223 | Tarih, kWh, Hesap Sınıfı |
 
-### Temel İstatistikler
+
+#### Temel İstatistikler
 
 - **Ortalama Tüketim:** 92.6 kWh (Medyan: 46.6 kWh)
 - **Mesken Oranı:** %86.6
@@ -44,20 +43,20 @@ case_study_02/
 
 ---
 
-## 🔍 Analiz Aşamaları
+###  Analiz Aşamaları
 
-### 📘 Notebook 01: Veri Keşfi ve Tanımlayıcı İstatistik
+####  Notebook 01: Veri Keşfi ve Tanımlayıcı İstatistik
 
 **Amaç:** Veri kalitesini değerlendirmek ve temel istatistikleri çıkarmak
 
 **Gerçekleştirilen Analizler:**
-- ✅ Veri setlerinin yüklenmesi ve yapısal incelemesi (`.info()`, `.describe()`, `.head()`)
-- ✅ Veri tiplerinin düzenlenmesi (kategorik, datetime, numeric dönüşümleri)
-- ✅ Eksik veri analizi ve yorumlama
-- ✅ İlçe bazlı benzersiz müşteri sayısı hesaplama
-- ✅ Tahakkuk verilerinin birleştirilmesi (`pd.concat`)
-- ✅ Negatif ve aykırı tüketim değerlerinin tespiti (IQR yöntemi)
-- ✅ Hesap sınıfına göre toplulaştırma analizi
+-  Veri setlerinin yüklenmesi ve yapısal incelemesi (`.info()`, `.describe()`, `.head()`)
+-  Veri tiplerinin düzenlenmesi (kategorik, datetime, numeric dönüşümleri)
+-  Eksik veri analizi ve yorumlama
+-  İlçe bazlı benzersiz müşteri sayısı hesaplama
+-  Tahakkuk verilerinin birleştirilmesi (`pd.concat`)
+-  Negatif ve aykırı tüketim değerlerinin tespiti (IQR yöntemi)
+-  Hesap sınıfına göre toplulaştırma analizi
 
 **Önemli Bulgular:**
 - Toplam **48,554 outlier** tespit edildi (%4.09)
@@ -67,16 +66,16 @@ case_study_02/
 
 ---
 
-### 📗 Notebook 02: Veri Görselleştirme ve Karşılaştırmalı Analiz
+####  Notebook 02: Veri Görselleştirme ve Karşılaştırmalı Analiz
 
 **Amaç:** İlçeler, hesap sınıfları ve zaman boyutunda karşılaştırmalı analiz yapmak
 
 **Gerçekleştirilen Analizler:**
-- 📊 İlçelere göre hesap sınıfı dağılımları (oransal karşılaştırma)
-- 📈 Aylık ve mevsimsel tüketim trendleri (line chart)
-- 🏦 Tahsilat işlemlerinin şube ve ilçe bazlı dağılımı (bar chart)
-- 💳 Zamanında ve geç ödeme oranları (pie chart analizi)
-- 📦 kWh tüketim dağılımı (histogram ve box plot)
+-  İlçelere göre hesap sınıfı dağılımları (oransal karşılaştırma)
+-  Aylık ve mevsimsel tüketim trendleri (line chart)
+-  Tahsilat işlemlerinin şube ve ilçe bazlı dağılımı (bar chart)
+-  Zamanında ve geç ödeme oranları (pie chart analizi)
+-  kWh tüketim dağılımı (histogram ve box plot)
 
 **Önemli Bulgular:**
 - **Temmuz ayı** tüm ilçelerde en yüksek tüketim dönemi (133.85 kWh ortalama)
@@ -87,19 +86,27 @@ case_study_02/
 
 ---
 
-### 📕 Notebook 03: Veri Hikayesi Anlatımı - Açık Uçlu Analiz
+####  Notebook 03: Veri Hikayesi Anlatımı - Açık Uçlu Analiz
 
 **Amaç:** İş değeri yaratacak derinlemesine analizler ve müşteri segmentasyonu
 
-#### 🔹 İlçe Karşılaştırma Analizi
+####  İlçe Karşılaştırma Analizi
+
+**Araştırma Soruları:**
+1. Hangi ilçede ortalama tüketim daha yüksek?
+2. Mevsimsellik her ilçeyi nasıl etkiliyor?
+3. Hesap sınıfı dağılımları ilçeler arasında nasıl değişiyor?
+4. Hangi ilçede ödeme disiplini daha iyi?
+5. Aykırı tüketimler hangi ilçede daha yaygın?
+
 
 **Bulgular:**
 
-| İlçe | Ort. Tüketim | Medyan | Kayıt Sayısı | Zamanında Ödeme |
-|------|--------------|--------|--------------|-----------------|
-| **Gümüşhacıköy** | 97.34 kWh | 48.31 kWh | 765,657 (%65) | %69.06 |
-| **Göynücek** | 89.67 kWh | 45.09 kWh | 295,223 (%25) | %62.42 |
-| **Hamamözü** | 70.87 kWh | 40.56 kWh | 124,818 (%10) | %68.48 |
+| İlçe | Ort. Tüketim | Medyan | Kayıt Sayısı | Zmn. Ödeme |
+|------|--------------|--------|--------------|------------|
+| Gümüşhacıköy | 97.34 kWh | 48.31 kWh | 765,657 (%65) | %69.06 |
+| Göynücek | 89.67 kWh | 45.09 kWh | 295,223 (%25) | %62.42 |
+| Hamamözü | 70.87 kWh | 40.56 kWh | 124,818 (%10) | %68.48 |
 
 **Kritik İçgörüler:**
 - Ortalama ve medyan arasındaki fark, **yüksek tüketimli az sayıda abonenin** ortalamayı yukarı çektiğini gösteriyor
@@ -108,7 +115,7 @@ case_study_02/
 
 ---
 
-#### 🔹 Müşteri Segmentasyonu (K-Means Clustering)
+####  Müşteri Segmentasyonu (K-Means Clustering)
 
 **Metodoloji:**
 - **Değişkenler:** Ortalama tüketim, tüketim std sapması, zamanında ödeme oranı, ortalama gecikme
@@ -118,16 +125,16 @@ case_study_02/
 
 **Segmentler ve Karakteristikleri:**
 
-| Segment | Müşteri Sayısı | Oran | Ort. Tüketim | Zamanında Ödeme | Risk Durumu |
-|---------|----------------|------|--------------|-----------------|-------------|
-| **Orta Tüketim - Düzenli** | 19,375 | %68 | Orta | Yüksek | Düşük Risk ✅ |
-| **Riskli Müşteriler** | 7,509 | %27 | Orta-Düşük | Düşük | Yüksek Risk ⚠️ |
-| **Düşük Tüketim - İyi** | 957 | %3 | Düşük | Yüksek | Düşük Risk ✅ |
-| **Yüksek Tüketim - Riskli** | 449 | %2 | Çok Yüksek | Düşük | Kritik Risk 🚨 |
+| Segment | Müşteri Sayısı | Oran | Ort. Tüketim | Zmn. Ödeme | Risk Durumu |
+|---------|----------------|------|--------------|------------|-------------|
+| Orta Tüketim - Düzenli | 19,375 | %68 | Orta | Yüksek | Düşük Risk  |
+| Riskli Müşteriler | 7,509 | %27 | Orta-Düşük | Düşük | Yüksek Risk  |
+| Düşük Tüketim - İyi | 957 | %3 | Düşük | Yüksek | Düşük Risk  |
+| Yüksek Tüketim - Riskli | 449 | %2 | Çok Yüksek | Düşük | Kritik Risk  |
 
----
 
-#### 🔹 Segmentlerin İlçelere Göre Dağılımı
+
+####  Segmentlerin İlçelere Göre Dağılımı
 
 **Göynücek:**
 - En yüksek riskli müşteri oranı (%32)
@@ -143,28 +150,28 @@ case_study_02/
 
 ---
 
-## 📊 Önemli Bulgular Özeti
+###  Önemli Bulgular Özeti
 
-### Tüketim Davranışı
-- 🔴 **Yaz ayları kritik:** Temmuz'da ortalama tüketim %60+ artıyor
-- 🔵 **İlçe farklılıkları:** Gümüşhacıköy > Göynücek > Hamamözü
-- 🟢 **Hesap sınıfı:** Mesken %86.6, geri kalanı ticari ve tarımsal
+#### Tüketim Davranışı
+-  **Yaz ayları kritik:** Temmuz'da ortalama tüketim %60+ artıyor
+-  **İlçe farklılıkları:** Gümüşhacıköy > Göynücek > Hamamözü
+-  **Hesap sınıfı:** Mesken %86.6, geri kalanı ticari ve tarımsal
 
-### Ödeme Davranışı
-- ✅ %69.2 zamanında ödeme (iyi performans)
-- ⚠️ %27.2 gecikmeli ödeme (takip gerektirir)
-- ❌ %2.55 hiç tahsilat yok (veri kalitesi sorunu)
+#### Ödeme Davranışı
+-  %69.2 zamanında ödeme (iyi performans)
+-  %27.2 gecikmeli ödeme (takip gerektirir)
+-  %2.55 hiç tahsilat yok (Dikkat)
 
-### Müşteri Segmentasyonu
-- 💚 %68 düzenli müşteri (portföy çekirdeği)
-- 🟡 %27 riskli müşteri (tahsilat odağı)
-- 🔴 %2 yüksek tüketim-riskli (kritik segment)
+#### Müşteri Segmentasyonu
+-  %68 düzenli müşteri (portföy çekirdeği)
+-  %27 riskli müşteri (tahsilat odağı)
+-  %2 yüksek tüketim-riskli (kritik segment)
 
 
 ---
 
-## 🙏 Teşekkürler
+####  Teşekkürler
 
-- **Çalık Enerji Yapay Zeka Ekibi:** Gerçek veri seti için
-- **Ahmet Çalık Vakfı:** Eğitim programı için
-- **Eğitmenler:** Rehberlik ve geri bildirimler için
+- **Çalık Enerji Yapay Zeka Ekibi**: Gerçek veri seti için
+- **Ahmet Çalık Vakfı**: Eğitim programı için
+- **Eğitmenler**: Rehberlik ve geri bildirimler için
