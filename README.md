@@ -1,2 +1,2 @@
 # ACV_Veri
-İleri Veri Analitiği - Case Studies
+Ahmet Çalık Vakfı İleri Veri Analitiği Eğitimi - Case Studies
