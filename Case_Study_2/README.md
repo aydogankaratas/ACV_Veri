@@ -1,4 +1,4 @@
-#  Enerji Perakende Veri Analizi Case Study - Ahmet Çalık Vakfı
+# 📊 Enerji Perakende Veri Analizi Case Study - Ahmet Çalık Vakfı
 
 
 Bu proje, **Ahmet Çalık Vakfı İleri Veri Analitiği Eğitimi** kapsamında hazırlanmış olan gerçek enerji sektörü verilerine dayalı kapsamlı bir veri analizi çalışmasıdır. Amasya ili ve ilçelerindeki (Hamamözü, Gümüşhacıköy, Göynücek) elektrik tüketim ve tahsilat verileri kullanılarak müşteri davranışları, mevsimsel trendler ve ödeme alışkanlıkları analiz edilmiştir.
@@ -10,7 +10,7 @@ Bu proje, **Ahmet Çalık Vakfı İleri Veri Analitiği Eğitimi** kapsamında h
 
 ---
 
-###  Proje Yapısı
+### 📁 Proje Yapısı
 ```
 case_study_02/
 ├── README.md
@@ -20,7 +20,7 @@ case_study_02/
 ```
 ---
 
-###  Veri Seti Genel Bakış
+### 📊 Veri Seti Genel Bakış
 
 #### Veri Kaynakları
 
@@ -43,9 +43,9 @@ case_study_02/
 
 ---
 
-###  Analiz Aşamaları
+### 🔍 Analiz Aşamaları
 
-####  Notebook 01: Veri Keşfi ve Tanımlayıcı İstatistik
+#### 📘 Notebook 01: Veri Keşfi ve Tanımlayıcı İstatistik
 
 **Amaç:** Veri kalitesini değerlendirmek ve temel istatistikleri çıkarmak
 
@@ -66,7 +66,7 @@ case_study_02/
 
 ---
 
-####  Notebook 02: Veri Görselleştirme ve Karşılaştırmalı Analiz
+#### 📗 Notebook 02: Veri Görselleştirme ve Karşılaştırmalı Analiz
 
 **Amaç:** İlçeler, hesap sınıfları ve zaman boyutunda karşılaştırmalı analiz yapmak
 
@@ -86,11 +86,11 @@ case_study_02/
 
 ---
 
-####  Notebook 03: Veri Hikayesi Anlatımı - Açık Uçlu Analiz
+#### 📕 Notebook 03: Veri Hikayesi Anlatımı - Açık Uçlu Analiz
 
 **Amaç:** İş değeri yaratacak derinlemesine analizler ve müşteri segmentasyonu
 
-####  İlçe Karşılaştırma Analizi
+#### 🔹 İlçe Karşılaştırma Analizi
 
 **Araştırma Soruları:**
 1. Hangi ilçede ortalama tüketim daha yüksek?
@@ -115,7 +115,7 @@ case_study_02/
 
 ---
 
-####  Müşteri Segmentasyonu (K-Means Clustering)
+#### 🔹 Müşteri Segmentasyonu (K-Means Clustering)
 
 **Metodoloji:**
 - **Değişkenler:** Ortalama tüketim, tüketim std sapması, zamanında ödeme oranı, ortalama gecikme
@@ -134,7 +134,7 @@ case_study_02/
 
 
 
-####  Segmentlerin İlçelere Göre Dağılımı
+#### 🔹 Segmentlerin İlçelere Göre Dağılımı
 
 **Göynücek:**
 - En yüksek riskli müşteri oranı (%32)
@@ -150,7 +150,7 @@ case_study_02/
 
 ---
 
-###  Önemli Bulgular Özeti
+### 📊 Önemli Bulgular Özeti
 
 #### Tüketim Davranışı
 -  **Yaz ayları kritik:** Temmuz'da ortalama tüketim %60+ artıyor
@@ -170,7 +170,7 @@ case_study_02/
 
 ---
 
-####  Teşekkürler
+#### 🙏 Teşekkürler
 
 - **Çalık Enerji Yapay Zeka Ekibi**: Gerçek veri seti için
 - **Ahmet Çalık Vakfı**: Eğitim programı için
