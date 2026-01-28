@@ -4,8 +4,7 @@
 
 > Aktifbank müşteri verisi üzerinde gerçekleştirilen kapsamlı Excel analiz projesi
 
-
-## 🎯 Proje Hakkında
+ **Proje Hakkında**
 
 Bu proje, Aktifbank'a ait gerçek kredi kartı müşteri verisi kullanılarak hazırlanmış kapsamlı bir Excel analiz çalışmasıdır. Proje kapsamında:
 
@@ -17,7 +16,7 @@ Bu proje, Aktifbank'a ait gerçek kredi kartı müşteri verisi kullanılarak ha
 gerçekleştirilmiştir.
 
 
-## 📊 Veri Seti
+### 📊 Veri Seti
 
 | Özellik | Değer |
 |---------|-------|
@@ -26,7 +25,7 @@ gerçekleştirilmiştir.
 | **Sütun Sayısı** | 23 |
 | **Veri Tipi** | CSV |
 
-### Veri Yapısı
+#### Veri Yapısı
 
 Veri seti aşağıdaki ana kategorileri içermektedir:
 
@@ -36,9 +35,9 @@ Veri seti aşağıdaki ana kategorileri içermektedir:
 - **İlişki Bilgileri**: Müşteri kıdemi, kart kategorisi, ilişki sayısı
 - **Churn Flag**: Existing Customer (Mevcut) / Attrited Customer (Ayrılan)
 
-## 🔍 Analiz Adımları
+### 🔍 Analiz Adımları
 
-### 1️⃣ Veri Hazırlama ve Temizleme
+#### 1️⃣ Veri Hazırlama ve Temizleme
 
 
 Kullanılan Teknikler:
@@ -48,14 +47,14 @@ Kullanılan Teknikler:
 - Veri tipi düzenleme
 
 
-### 2️⃣ Veri Dönüştürme
+#### 2️⃣ Veri Dönüştürme
 
 - **Yaş Grupları**: 25-35, 36-45, 46-65, 56+
 - **Müşteri Kıdem Kategorisi**: 0-2 yıl, 2-4 yıl, 4+ yıl
 - **Kredi Kullanım Seviyesi**: Düşük, Orta, Yüksek
 - **Gelir Kategorisi**: <40K, 40K-60K, 60K-80K, 80K-120K, 120K+
 
-### 3️⃣ Pivot Tablo Analizleri
+#### 3️⃣ Pivot Tablo Analizleri
 
 - Gelir kategorisine göre ortalama kredi limiti
 - Yaş ve cinsiyet bazında müşteri dağılımı
@@ -63,7 +62,7 @@ Kullanılan Teknikler:
 - Top 10 en yüksek harcama yapan müşteriler
 - Müşteri segmenti bazında işlem tutarı analizi
 
-### 3️⃣ Müşteri Segmentasyon Metodolojisi
+#### 4️⃣ Müşteri Segmentasyon Metodolojisi
 
 Müşteriler, iki temel boyut üzerinden altı farklı segmente ayrılmıştır:
 
@@ -87,7 +86,7 @@ Müşteriler, iki temel boyut üzerinden altı farklı segmente ayrılmıştır:
 - **Yüksek**: Kredi limitinin büyük kısmı kullanılıyor (potansiyel risk)
 
 
-### 4️⃣ Senaryo Analizleri
+#### 5️⃣ Senaryo Analizleri
 
 | Araç | Kullanım Alanı |
 |------|----------------|
@@ -96,9 +95,9 @@ Müşteriler, iki temel boyut üzerinden altı farklı segmente ayrılmıştır:
 | **Scenario Manager** | İyimser/Kötümser/Baz senaryo karşılaştırması |
 | **Data Table** | Limit artışının işlem hacmine etkisi |
 
-## 📈 Dashboard Özellikleri
+### 📈 Dashboard Özellikleri
 
-### Temel Metrikler (KPI)
+#### Temel Metrikler (KPI)
 
 -  Toplam Müşteri Sayısı: **10,127**
 -  Toplam İşlem Hacmi: **₺44.6M**
@@ -106,13 +105,13 @@ Müşteriler, iki temel boyut üzerinden altı farklı segmente ayrılmıştır:
 -  Ortalama Kredi Limiti: **₺8,618**
 -  Ortalama Kullanım Oranı: **27.5%**
 
-### İnteraktif Özellikler
+#### İnteraktif Özellikler
 
 - Slicer ile dinamik filtreleme (Cinsiyet, Yaş Grubu, Gelir Kategorisi)
 - Dinamik grafik başlıkları
 - Conditional formatting ile KPI takibi
 
-### Görselleştirmeler
+#### Görselleştirmeler
 
 - Waterfall Chart: Müşteri segmenti dağılımı
 - Combo Chart: İşlem sayısı vs. Tutar
@@ -120,9 +119,9 @@ Müşteriler, iki temel boyut üzerinden altı farklı segmente ayrılmıştır:
 - Line Chart: Limit artış senaryosu etkisi
 
 
-## 💡 Temel Bulgular
+### 💡 Temel Bulgular
 
-### Müşteri Segmentasyonu
+#### Müşteri Segmentasyonu
 
 | Segment | Müşteri Sayısı | Toplam Hacim | Avg. İşlem |
 |---------|----------------|--------------|------------|
@@ -133,7 +132,7 @@ Müşteriler, iki temel boyut üzerinden altı farklı segmente ayrılmıştır:
 | Düşük Değer | 5,086 | ₺15.6M | ₺10,319 |
 | Düşük - Potansiyel Risk | 3,591 | ₺12.4M | ₺3,119 |
 
-### Churn Analizi
+#### Churn Analizi
 
 - **Genel Churn Oranı**: %16.07 (1,627 müşteri)
 - **En Yüksek Risk Grubu**: Orta Gelir % 32.80
@@ -142,7 +141,7 @@ Müşteriler, iki temel boyut üzerinden altı farklı segmente ayrılmıştır:
 
 ---
 
-## 🙏 Teşekkürler
+#### 🙏 Teşekkürler
 
 - Aktifbank'a veri seti için
 - Ahmet Çalık Vakfı'na eğitim programı için
