@@ -1,7 +1,6 @@
-# 🔌 Elektrik Tüketim Verilerinde Anomali Analizi Case Study - Ahmet Çalık Vakfı
+# 🔌 Elektrik Tüketim Verilerinde Anomali Analizi Case Study - YEDAŞ
 ![Power BI](https://img.shields.io/badge/Power%20BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)
 ![DAX](https://img.shields.io/badge/DAX-FF6F00?style=for-the-badge&logo=microsoft&logoColor=white)
-![Data Analysis](https://img.shields.io/badge/Data%20Analysis-4285F4?style=for-the-badge&logo=googleanalytics&logoColor=white)
 
 Power BI kullanılarak elektrik dağıtım şebekelerinde veri odaklı karar destek sistemleri geliştirerek operasyonel verimliliği artırmak amacıyla gerçekleştirilen kapsamlı anomali tespit ve analiz projesi.
 
@@ -134,6 +133,5 @@ Projede **7 farklı anomali tipi** tespit edilmiştir:
 
 #### 🙏 Teşekkürler
 
-- **Çalık Enerji Yapay Zeka Ekibi**: Gerçek veri seti için 
-- **Ahmet Çalık Vakfı**: Eğitim programı için
-- **Eğitmenler**: Rehberlik ve geri bildirimler için
+- YEDAŞ (Yeşilırmak Elektrik Dağıtım A.Ş.)'a veri seti için
+- Ahmet Çalık Vakfı'na eğitim programı için
