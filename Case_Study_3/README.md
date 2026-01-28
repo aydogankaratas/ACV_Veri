@@ -69,7 +69,7 @@ DAX formülleri ile yeni metrikler oluşturuldu:
 - `Ortalama_Akim`: (l1 + l2 + l3) / 3
 - `Ortalama_Gerilim`: (v1 + v2 + v3) / 3
 - `Faz_Dengesizligi`: max(l1, l2, l3) - min(l1, l2, l3)
-- `Aktif_Tüketim_Farki`: Günler arası tüketim farkı
+- `Aktif_Tüketim_Farki`: Her 15 dk arası tüketim farkı
 - `Saat_Dilimi`: Gece / Gündüz / Mesai Saati
 - `Hafta_HaftaSonu`: Hafta içi / Hafta sonu ayrımı
 - `Full_Location`: İl + İlçe birleşik konum
