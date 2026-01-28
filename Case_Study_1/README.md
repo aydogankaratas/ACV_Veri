@@ -145,5 +145,5 @@ Müşteriler, iki temel boyut üzerinden altı farklı segmente ayrılmıştır:
 ## 🙏 Teşekkürler
 
 - Aktifbank'a veri seti için
-- Ahmet Çalık Vakfı: Eğitim programı için
+- Ahmet Çalık Vakfı'na eğitim programı için
 
