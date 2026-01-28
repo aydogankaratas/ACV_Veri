@@ -1,11 +1,14 @@
-# 📊 Enerji Perakende Veri Analizi Case Study - Ahmet Çalık Vakfı
+# 📊 Enerji Perakende Veri Analizi Case Study - Çalık Enerji
+
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white)
 
 
 Bu proje, **Ahmet Çalık Vakfı İleri Veri Analitiği Eğitimi** kapsamında hazırlanmış olan gerçek enerji sektörü verilerine dayalı kapsamlı bir veri analizi çalışmasıdır. Amasya ili ve ilçelerindeki (Hamamözü, Gümüşhacıköy, Göynücek) elektrik tüketim ve tahsilat verileri kullanılarak müşteri davranışları, mevsimsel trendler ve ödeme alışkanlıkları analiz edilmiştir.
 
 **Veri Dönemi:** Ocak 2023 - Temmuz 2025  
-**Toplam Kayıt:** ~2.74M kayıt  
-**Müşteri Sayısı:** ~28,299 benzersiz müşteri  
+**Toplam Kayıt:** 2.740.323 kayıt  
+**Müşteri Sayısı:** 28,299 benzersiz müşteri  
 **Analiz Aracı:** Python (Pandas, Matplotlib, Seaborn, Scikit-learn)
 
 ---
@@ -80,7 +83,7 @@ case_study_02/
 **Önemli Bulgular:**
 - **Temmuz ayı** tüm ilçelerde en yüksek tüketim dönemi (133.85 kWh ortalama)
 - **Göynücek** en yüksek mevsimsel oynaklığa sahip (Kış/Yaz farkı: %45.9)
-- **Hamamözü** dengeli tüketim profili sergiliyor (yıl boyunca ~70 kWh)
+- **Hamamözü** dengeli tüketim profili sergiliyor (yıl boyunca 70.87 kWh)
 - **Gümüşhacıköy** hem yüksek tüketim hem yüksek abone sayısına sahip
 - Ödeme işlemlerinin %98.7'si banka kanalıyla gerçekleşiyor
 
@@ -172,6 +175,5 @@ case_study_02/
 
 #### 🙏 Teşekkürler
 
-- **Çalık Enerji Yapay Zeka Ekibi**: Gerçek veri seti için
-- **Ahmet Çalık Vakfı**: Eğitim programı için
-- **Eğitmenler**: Rehberlik ve geri bildirimler için
+- Çalık Enerji'ye veri seti için
+- Ahmet Çalık Vakfı'na eğitim programı için
